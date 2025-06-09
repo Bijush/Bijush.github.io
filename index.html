@@ -3,79 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
- <meta name="google-adsense-account" content="ca-pub-7552073292756448">
+  <meta name="google-adsense-account" content="ca-pub-7552073292756448" />
   <title>Bijush Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
-      background: #f0f4f8;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #fce4ec);
       color: #333;
       text-align: center;
     }
+
     header {
-      background: #0077cc;
+      background: #1976d2;
       color: white;
-      padding: 1.5rem;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     h1 {
-      margin: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
+
     p {
-      margin: 0.5rem 0;
+      font-size: 1rem;
     }
+
     .content {
-      padding: 2rem;
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
     }
+
     .card {
       background: white;
       margin: 1rem auto;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
       max-width: 600px;
+      animation: fadeInUp 0.8s ease;
     }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #1976d2;
+    }
+
     a {
       display: inline-block;
       margin-top: 1rem;
       text-decoration: none;
-      background: #0077cc;
+      background: #1976d2;
       color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      transition: background 0.3s ease;
     }
+
+    a:hover {
+      background: #0d47a1;
+    }
+
     footer {
-      background: #eee;
+      background: #fafafa;
       padding: 1rem;
       font-size: 0.9rem;
+      color: #555;
+      margin-top: 2rem;
+    }
+
+    .ad-container {
+      margin: 2rem auto;
+      max-width: 700px;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.3rem; }
+      .card { padding: 1rem; }
     }
   </style>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7552073292756448"
-     crossorigin="anonymous"></script>
-  
+  <!-- AdSense Script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7552073292756448"
+          crossorigin="anonymous"></script>
 </head>
 <body>
 
   <header>
-    <h1>Bijush Academy</h1>
-    <p>Learning Platform for SEBA Students</p>
+    <h1>Welcome to Bijush Academy 🏫</h1>
+    <p>Empowering SEBA Students with Smart Learning Tools</p>
   </header>
 
-  <div style="margin: 1rem 0;">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-7552073292756448"
-       data-ad-slot="3754890054"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-</div>
+  <div class="content">
 
-  
+    <!-- Google AdSense Block -->
+    <div class="ad-container">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7552073292756448"
+           data-ad-slot="3754890054"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
     <div class="card">
       <h2>📅 Academic Calendar</h2>
       <p>View your class-wise academic schedule and preparation tips.</p>
@@ -84,20 +143,20 @@
 
     <div class="card">
       <h2>📘 Class 10 Math</h2>
-      <p>Chapter-wise notes and practice tools for Mathematics.</p>
+      <p>Chapter-wise notes and interactive practice for Mathematics.</p>
       <a href="https://bijush.github.io/math/class10-chapter.html">Go to Class 10</a>
     </div>
 
     <div class="card">
       <h2>🌐 More Projects</h2>
-      <p>Explore educational tools built for SEBA curriculum.</p>
+      <p>Explore educational tools and future learning aids.</p>
       <a href="https://github.com/Bijush">View on GitHub</a>
     </div>
 
   </div>
 
   <footer>
-    &copy; 2025 Bijush Academy | Empowering Learners Across Assam
+    &copy; 2025 Bijush Academy · All Rights Reserved · Built with ❤️ for learners in Assam
   </footer>
 
 </body>
